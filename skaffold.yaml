@@ -1,0 +1,16 @@
+apiVersion: skaffold/v2beta26
+kind: Config
+metadata:
+  name: adm
+build:
+  tagPolicy:
+    customTemplate:
+      template: "v0.2.8"
+  artifacts:
+  - image: us-central1-docker.pkg.dev/mchirico/public/gosts
+    ko: {}
+
+
+     
+
+
